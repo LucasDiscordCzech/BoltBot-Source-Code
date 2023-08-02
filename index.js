@@ -1,7 +1,6 @@
 // Importing necessary modules for Discord.js, express, and bottleneck (rate limiting)
 const { Client, GatewayIntentBits, EmbedBuilder} = require('discord.js'); 
 
-
 const express = require('express'); // Express for the 24/7 uptime server (please comment out if you're not using replit, aswell the express server at the of the code.)
 
 const Bottleneck = require('bottleneck'); // Rate limiter for OpenAIApi so you don't hit rate limits. 
@@ -31,7 +30,7 @@ function customLog(message) {
 }
 
 // Constants for token management and limiter setup
-const MAX_TOKENS = 1000; // not recommended above 5000, if you're noticing the bot doesn't remember anything, and forgets alot, you should probraly make this lower and fetch less messages. 
+const MAX_TOKENS = 3500; // not recommended above 5000, if you're noticing the bot doesn't remember anything, and forgets alot, you should probraly make this lower and fetch less messages. 
 
 // Recommended settings:
 // GPT-4 = 3500
@@ -114,13 +113,6 @@ client.on('messageCreate', async message => {
     let tokenCount = 0;
     tokenCount = initialConversationLog.reduce((acc, msg) => acc + msg.content.split(/\s+/).length, 0);
 
-    for (let msg of reversedPrevMessages) {
-      const botIds = ['1071499268818485289', 'bot-id-2'];
-      const role = botIds.includes(msg.author.id) ? "assistant" : "user";
-      const username = msg.author.username;
-      const rawContent = role === "user" ? `<@${msg.author.id}> ${username} ${msg.content}` : msg.content;
-      let content = rawContent.replace(/\s+/g, ' ');
-      content = content.replace(/([.,!?])\1{1,}/g, '$1'); // Removing spacey, etc, when needed to avoid context lentgh API issues. 
       
       let messageTokens = content.split(/\s+/).length;
 
@@ -148,7 +140,7 @@ client.on('messageCreate', async message => {
 
       conversationLog.push({ role: role, content: content, timestamp: msg.createdTimestamp });
       tokenCount += messageTokens;
-    }
+    
 
     // Pre-load messages from initialConversationLog if there's enough space available
     const initialMessagesPresent = conversationLog.slice(1).some(msg => msg.role === 'user' || msg.role === 'assistant');
