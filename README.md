@@ -11,6 +11,10 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 - Discord.js v14 library
 - [OpenAI API](https://openai.com/api) account with API key access and an API key.
 
+## Source code 
+- Host on [Replit](https://replit.com/@bonnieee123456/BoltBot-Source-Code?). 
+- Get source on the [Github Repository](https://github.com/LucasDiscordCzech/BoltBot-Source-Code). 
+
 ## Features:
 
 1. **Server-side Conversation Handling**: BoltBot⚡ remembers recent messages in a conversation, providing context to its responses. This results in more coherent and contextual replies.
