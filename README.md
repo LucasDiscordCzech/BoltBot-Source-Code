@@ -9,7 +9,7 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 ## Prerequisites
 - Node.js
 - Discord.js v14 library
-- [OpenAI API](https://openai.com/api) account with API key access and an API key.
+- [OpenAI API](https://openai.com/api) account with API key access and an API Key
 
 ## Source code 
 - Host on [Replit](https://replit.com/@bonnieee123456/BoltBot-Source-Code?). 
@@ -19,13 +19,13 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 
 1. **Server-side Conversation Handling**: BoltBot⚡ remembers recent messages in a conversation, providing context to its responses. This results in more coherent and contextual replies.
 
-2. **Handling Context Length**: To adhere to OpenAI's token limits, the bot manages the length of conversations. If a conversation exceeds the token limit, older messages are pruned to fit within the constraints.
+2. **Handling Context Length**: To adhere to **__OpenAI's token limits and context lentgh issues__**, the bot manages the length of conversations. If a conversation exceeds the token limit, older messages are pruned to fit within the constraints.
 
 3. **Rate Limit Handling**: Using the `Bottleneck` library, BoltBot⚡ efficiently manages OpenAI API calls to avoid hitting rate limits.
 
 4. **Sanitized Responses**: The bot's responses are sanitized to prevent unwanted content like mentions, ensuring server safety.
 
-5. **Reaction & Typing**: While the bot is writing an request, it will react with an '⏰' emoji and start typing to show that it's doing the request from the OpenAI API. You can customize the reaction in the code.
+5. **Reaction & Typing**: While the bot is writing an request, it will react with an **'⏰'** emoji and start typing to show that it's doing the request from the **__OpenAI API__**. You can customize the reaction in the code.
   
 6. **Intelligent Environment**: The AI is fed alot of data, such as the user's roles, where it's talking such as the channel, server, and so on. And this is all in real-time, no replacing. This will let the AI be more intelligent and advanced as it know's it's environment. 
 
@@ -60,11 +60,12 @@ For example, you can modify the bot's introduction, tone, or any other instructi
 5. Use `node index.js` to start the bot.
 6. To push updates, commit your changes and push them to your GitHub repository. If you want to contribute to the main project, open a pull request.
 
-## BoltBot⚡ in Action:
-![BoltBot⚡ in Action](https://cdn.discordapp.com/attachments/1132428314326339654/1135934274852368508/Screenshot_20230801_155134_Discord.jpg)
+## BoltBot⚡ Developer's:
+[![Discord Presence](https://lanyard.cnrad.dev/api/812267733860745227)](https://discord.com/users/812267733860745227)
+[![Discord Presence](https://lanyard.cnrad.dev/api/534020187192819722)](https://discord.com/users/534020187192819722)
 
 ## Feedback & Support
-If you encounter any issues or have suggestions for improvements, please raise an issue on the GitHub repository or contact the developers directly on discord, by adding @czch or @protonop. 
+If you encounter any issues or have suggestions for improvements, please raise an issue on the GitHub repository or contact the developers directly on discord, by adding **@czch** or **@protonop**. 
 
 ## License
 This project is open-sourced under the MIT license.
