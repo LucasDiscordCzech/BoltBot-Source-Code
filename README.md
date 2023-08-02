@@ -7,13 +7,15 @@
 BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It's designed to provide users with a conversational partner, capable of answering questions, providing coding assistance, and engaging in casual chat.
 
 ## Prerequisites
-- Node.js
-- Discord.js v14 library
-- [OpenAI API](https://openai.com/api) account with API key access and an API Key
+### Before you host your own BoltBot⚡, ensure you have:
 
-## Source code 
-- Host on [Replit](https://replit.com/@bonnieee123456/BoltBot-Source-Code?). 
-- Get source on the [Github Repository](https://github.com/LucasDiscordCzech/BoltBot-Source-Code). 
+- Node.js (v14+)
+- Discord.js v14 library
+- An [OpenAI API](https://openai.com/api) Paid  account with API key access and an API Key
+
+## Source Code Access
+- Host & Fork on [Replit](https://replit.com/@bonnieee123456/BoltBot-Source-Code?s). 
+- Contribute or fork from the [GitHub Repository](https://github.com/LucasDiscordCzech/BoltBot-Source-Code).
 
 ## Features:
 
@@ -25,7 +27,7 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 
 4. **Sanitized Responses**: The bot's responses are sanitized to prevent unwanted content like mentions, ensuring server safety.
 
-5. **Reaction & Typing**: While the bot is writing an request, it will react with an **'⏰'** emoji and start typing to show that it's doing the request from the **__OpenAI API__**. You can customize the reaction in the code.
+5. **Reaction & Typing**: While the bot is writing an request, it will react with an **'⏰'** emoji and start typing to show that it's doing the request from the **__OpenAI API__**. You can customize the reaction in the code at line 170.
   
 6. **Intelligent Environment**: The AI is fed alot of data, such as the user's roles, where it's talking such as the channel, server, and so on. And this is all in real-time, no replacing. This will let the AI be more intelligent and advanced as it know's it's environment. 
 
@@ -65,7 +67,10 @@ For example, you can modify the bot's introduction, tone, or any other instructi
 [![Discord Presence](https://lanyard.cnrad.dev/api/534020187192819722)](https://discord.com/users/534020187192819722)
 
 ## Feedback & Support
-If you encounter any issues or have suggestions for improvements, please raise an issue on the GitHub repository or contact the developers directly on discord, by adding **@czch** or **@protonop**. 
+
+- 📌 Raise an issue on our [Github Page](https://github.com/LucasDiscordCzech/BoltBot-Source-Code/issues).
+
+-  📬 Reach out to our developers on Discord: **@czch** and **@protonop** for questions and support.
 
 ## License
 This project is open-sourced under the MIT license.

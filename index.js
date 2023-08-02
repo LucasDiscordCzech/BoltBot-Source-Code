@@ -167,7 +167,7 @@ client.on('messageCreate', async message => {
  } 
 
     // React with an clock alarm emoji
-  const reaction = await message.react('⏰');
+  const reaction = await message.react('⏰'); // Edit to custom or built in emoji if you'd like.
     
 await message.channel.sendTyping();
 
