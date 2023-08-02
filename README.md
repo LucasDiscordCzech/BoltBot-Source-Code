@@ -49,7 +49,7 @@ For example, you can modify the bot's introduction, tone, or any other instructi
 
 ### GitHub:
 
-1. Fork the BoltBot⚡ repository to your GitHub account.
+1. Fork the [BoltBot⚡](https://github.com/LucasDiscordCzech/BoltBot-Source-Code) repository to your GitHub account.
 2. Clone the forked repository to your local machine.
 3. Navigate to the project directory and run `npm install` to install the required packages.
 4. Set up environment variables or use a `.env` file to store your `OPENAI_API_KEY` and `TOKEN`.
