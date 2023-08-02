@@ -11,7 +11,7 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 
 - Node.js (v14+)
 - Discord.js v14 library
-- An [OpenAI API](https://openai.com/api) Paid  account with API key access and an API Key
+- A paid [OpenAI API](https://openai.com/api) account with API key access.
 
 ## Source Code Access
 - Host & Fork on [Replit](https://replit.com/@bonnieee123456/BoltBot-Source-Code?s). 
@@ -37,7 +37,7 @@ BoltBot⚡ is an interactive Discord bot built on the **OpenAI GPT-4 model**. It
 ### Modifying the Prompt
 The bot's behavior and personality are determined by the prompt given to the OpenAI model. You can modify the `buildPrompt` function located in `/path/Prompt.js` to change the bot's behavior.
 
-For example, you can modify the bot's introduction, tone, or any other instructions. This allows Piper to have a unique personality tailored to your server's needs.
+For example, you can modify the bot's introduction, tone, or any other instructions. This allows BoltBot⚡ to have a unique personality tailored to your server's needs.
 
 
 ## Setup Instructions:
@@ -73,4 +73,4 @@ For example, you can modify the bot's introduction, tone, or any other instructi
 -  📬 Reach out to our developers on Discord: **@czch** and **@protonop** for questions and support.
 
 ## License
-This project is open-sourced under the MIT license.
+This project is open-sourced under the MIT License. [View License](https://github.com/LucasDiscordCzech/BoltBot-Source-Code/blob/main/LICENSE.md)
