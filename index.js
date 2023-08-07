@@ -1,6 +1,7 @@
 // Importing necessary modules for Discord.js, express, and bottleneck (rate limiting)
 const { Client, GatewayIntentBits, EmbedBuilder} = require('discord.js'); 
 
+
 const express = require('express'); // Express for the 24/7 uptime server (please comment out if you're not using replit, aswell the express server at the of the code.)
 
 const Bottleneck = require('bottleneck'); // Rate limiter for OpenAIApi so you don't hit rate limits. 
@@ -113,6 +114,13 @@ client.on('messageCreate', async message => {
     let tokenCount = 0;
     tokenCount = initialConversationLog.reduce((acc, msg) => acc + msg.content.split(/\s+/).length, 0);
 
+    for (let msg of reversedPrevMessages) {
+      const botIds = [client.user.id, 'bot-id-2'];
+      const role = botIds.includes(msg.author.id) ? "assistant" : "user";
+      const username = msg.author.username;
+      const rawContent = role === "user" ? `<@${msg.author.id}> ${username} ${msg.content}` : msg.content;
+      let content = rawContent.replace(/\s+/g, ' ');
+      content = content.replace(/([.,!?])\1{1,}/g, '$1'); // Removing spacey, etc, when needed to avoid context lentgh API issues. 
       
       let messageTokens = content.split(/\s+/).length;
 
@@ -140,7 +148,7 @@ client.on('messageCreate', async message => {
 
       conversationLog.push({ role: role, content: content, timestamp: msg.createdTimestamp });
       tokenCount += messageTokens;
-    
+    }
 
     // Pre-load messages from initialConversationLog if there's enough space available
     const initialMessagesPresent = conversationLog.slice(1).some(msg => msg.role === 'user' || msg.role === 'assistant');
